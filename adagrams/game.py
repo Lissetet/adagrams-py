@@ -2,7 +2,10 @@ import random
 
 def draw_letters():
 
-	""" This function takes no parameters and returns a pool of 10 random letters, which represents the player's hand. """
+	""" 
+	This function takes no parameters and returns a pool of 10 random letters, 
+	which represents the player's hand. 
+	"""
 	
 	# Initialize available_pool list
 	available_pool = []	
@@ -107,7 +110,7 @@ def get_highest_word_score(word_list):
 			# If current word has 10 letters, make it the new highest scoring word
 			elif len(word) == 10:
 					highest_word = word
-					
+
 			# If current word has fewer letters than the current highest scoring word, make it the new highest
 			elif len(word) < len(highest_word):
 					highest_word = word

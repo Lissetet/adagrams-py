@@ -48,8 +48,9 @@ def score_word(word):
     Returns:
         int: The score of the given word.
     """
-    return sum(letter_scores[letter.upper()] for letter in word) \
-        + (8 if len(word) >= 7 else 0)
+
+    return sum(letter_scores[letter.upper()] for letter in word \
+        if letter.isalpha()) + (8 if len(word) >= 7 else 0)
 	
 def get_highest_word_score(word_list):
     """
